@@ -1,0 +1,157 @@
+p,  a ,span, li {
+    font-size:16px;
+}
+h2, h4 {
+    font-weight: 700 !important;
+}
+.bg-purple {
+    background: #374d7d;
+}
+.text-purple {
+    color: #374d7d;
+}
+.btn.btn-purple {
+    background: #374d7d;
+    border: none;
+}
+.btn.btn-ornage{
+    background: #ee9324;
+    border: none;
+}
+header nav.navbar a.navbar-brand img {
+    width: 131px;
+}
+header .navbar-collapse li a img {
+    width: 44px;
+}
+.nav-item a {
+    text-decoration: none;
+    color: #fff !important;
+}
+header .navbar-collapse span.nav-link {
+    color: #fff !important; 
+}
+/*header .navbar-collapse li a {*/
+/*    color: #fff !important;*/
+/*}*/
+header {
+    background-color: #374d7d;
+    padding-top:11px;
+}
+li.nav-item {
+    background: #2f7ec1;
+    margin: 4px;
+    padding: 0px 0px 0px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 7px #1f396f;
+}
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px; 
+}
+.top-bar .me-auto a { 
+    margin-right: 11px;
+}
+.top-bar a i { 
+    margin: 7px;
+    font-size: 16px;
+}
+nav.navbar {
+    border-top: 1px solid #EDEDED;
+    margin-top: 9px;
+}
+
+.welcometo img {
+    width: 71%;
+    /* margin: 0px !important; */
+}
+p.wlcmtxt {
+    line-height: 2;
+}
+.news-events img.img-fluid {
+    width: 100%;
+}
+
+.facilitacie-galry { 
+    background-image: url(https://indiciedu.com.pk/campusnetic-school/assets/img/facilities-gallery.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/*.facilitacie-galry .col-md-5 .col-md-6 {*/
+/*    border: solid 2px #ee9324;*/
+/*    padding:15px 0px;*/
+/*    border-radius: 10px 0px;*/
+/*}*/
+
+.facilitacie-galry .col-md-5 .col-md-6 .col-inner{
+    border: solid 3px #ee9324;
+    padding: 15px 0px;
+    border-radius: 10px 0px;
+}
+.facilitacie-galry .col-md-5 .col-md-6 a{
+    color: #ee9324;
+    font-weight: 700;
+}
+.facilitacie-galry .col-md-5 .col-md-6 img {
+    width: 12%;
+}
+.facilitacie-galry .col-md-7 img {
+    width: 100%;
+    height: 100%;
+}
+.col-md-4.colone  .col-inner, .col-md-4.colthree  .col-inner {
+    background: #374d7d;
+    padding: 10px;
+    border-radius: 10px 0px;
+}
+.col-md-4.coltwo  .col-inner {
+    background: #ee9324;
+    padding: 10px;
+    border-radius: 10px 0px;
+}
+.register-interest input , .register-interest select , .register-interest textarea {
+    line-height: 1.8 !important;
+    font-size: 20px !important;
+}
+.recoltwo {
+    background: #ee9324;
+    position: relative;
+    top: -48px;
+    padding: 60px;
+    /* margin: 0px 100px; */
+}
+.recoltwo img {
+    width: 30px;
+    margin-left: 12px;
+}
+hr.hr-senter-set {
+    width: 171px;
+    opacity: 1;
+    color: #374d7d;
+    margin: auto;
+    margin: 20px auto;
+}
+
+/*footer hr {*/
+/*    position: relative;*/
+/*    top: 60px;*/
+/*    z-index: 0;*/
+/*}*/
+footer img.mx-auto.d-block.img-fluid {
+    border: solid #40c4ea;
+    background: #374d7d;
+    z-index: 30 !important;
+    padding:0 10px 0px 10px;
+    position:relative;
+}
+hr.hr-ftr-set {
+    margin-top: -34px;
+    height: 2px;
+    color: #40c4ea;
+    opacity:1;
+}
+ 
+  iframe {
+    width: 100%;
+} 

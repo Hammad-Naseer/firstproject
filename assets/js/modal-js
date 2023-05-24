@@ -1,0 +1,11 @@
+	<script src="jquery-2.1.4.js"></script>
+	<script src="bootstrap-datepicker.js"></script>
+
+<script>
+  var jQuery2_1_4 = $.noConflict(true); 
+     jQuery2_1_4 (document).ready(function () {
+		jQuery2_1_4 ("input[name='due_date'],input[name='collect_date']").datepicker({
+    					startDate:"+0d"
+				});
+     });
+</script>

@@ -1,0 +1,326 @@
+
+
+body{
+	padding:0px;
+	margin:0px;
+	overflow-x: hidden
+	
+}
+header{
+	border-bottom:5px solid #4a8cbb;
+	margin-bottom:30px;
+	box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+.dashboard h2{
+	padding:0px 0px 0px 20px;
+	color:#7d0202;
+	margin-bottom:20px;
+}
+
+.dashboard-listing{
+	padding:0px;
+	margin:0px;
+}
+.dashboard-listing li{
+	display:block;
+	border-bottom:1px solid #eeeeee;
+	background-position:left top 5px !important;
+	background-repeat:no-repeat !important;
+	background-size:12% auto !important;
+}
+.dashboard-listing li:last-child{
+	border-bottom:none;
+}
+.dashboard-listing li a{
+	padding:10px 0px 10px 50px;
+	display:block;
+	color:#404040;
+	font-size:16px;	
+}
+.dashboard-listing li a:hover,
+.dashboard-listing li a:focus{
+	/*background:#ccc;*/
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+}
+.dashboard-info a{
+	color:#000;
+	display:block;
+	border:1px solid #eeeeee;
+	transform:scale(1);
+	overflow:hidden;
+	border-radius:5px;
+	margin-bottom:30px;
+	box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.2);
+	text-decoration:none;
+}
+
+
+/*
+.detail-wrap{opacity:0.5;}
+*/
+
+
+
+
+
+
+.dashboard-info a:hover .detail-wrap,
+.dashboard-info a:focus .detail-wrap{
+	text-decoration:none;
+	transform:scale(1.1);
+	transition:all 0.5s ease-in-out 0s;
+	opacity:0.5;
+}
+.detail-wrap{	
+	height:165px;
+	text-align:center;
+	padding-top:20px;
+}
+.dashboard-info p{
+    font-size: 16px;
+    color: #bf0000;
+    font-weight: bold;
+	text-decoration: none;
+}
+
+
+.dashboard-info{
+	margin-bottom:30px;
+}
+footer{
+	margin-top:20px;
+	background:#f6f6f6;
+	padding:20px 0px 0px 0px;
+	border-top:5px solid #4a8cbb;
+}
+footer img{
+	width:100%;
+	height:auto;
+}
+
+
+
+
+
+/*.first-logo,
+.second-logo{
+	width:350px;
+	height:80px;
+	margin:0 auto;
+}*/
+footer p{
+	clear:both;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+/*.logo-info{
+	text-align:center;
+	margin:25px 0px 20px 0px;
+}*/
+.logo-info a{
+	color:#000;
+	padding:0px 15px 0px 20px;
+	margin-left:15px;
+	font-size:14px;
+	background-size:10% auto;
+	display:inline-block;
+}
+.logo-info a:hover{
+	color:#272D69;
+	text-decoration:none;
+	opacity:0.8;
+}
+.logo-info a:first-child{
+	border-right:1px solid #000;
+}
+.web{
+	background:url(../images/web-icon.png) left center no-repeat;
+	    background-size: 10% 78%;
+}
+.email{
+	background:url(../images/email.png) left center no-repeat;
+	    background-size: 10% 78%;
+}
+.contact{
+	text-align:center;
+}
+.contact a{
+	display:inline-block;
+	color:#000;
+	padding:0px 15px;
+	border-right:1px solid #000;
+}
+.contact a:nth-child(3){
+	border-right:1px solid transparent;
+}
+.contact a:hover{
+	text-decoration:none;
+	color:#272D69;
+	opacity:0.8;
+}
+.contact p{
+	font-weight:normal;
+	font-size:14px;
+	padding-top:10px;
+}
+#collapse1 a,
+#collapse2 a,
+#collapse3 a,
+#collapse4 a,
+#collapse5 a,
+#collapse6 a,
+#collapse7 a{
+	font-size:14px;
+}
+.has-sub a:before{
+	content: '\e879';
+    display: inline-block;
+    font-family: 'Entypo';
+}
+.fa-angle-right{
+	position:relative;
+    float:right;
+    top:13px;
+    right:15px;
+}
+	
+	
+
+/**********************Updated CSS*************************/
+.glogo{    height: 78px;
+    width: 271px;}
+
+.fr{float:right;}
+.myanchor{        color: #23527c;
+    padding-left: 15px;
+    padding-right: 3px;
+    border-right: 1px solid;
+    }
+.myanchor:hover{    color: #1364AD;
+    text-decoration: none;}
+.myanchor2{        color: #23527c;
+    
+ 
+   
+    }
+.myanchor2:hover{    color: #1364AD;
+    text-decoration: none;}
+.fsize{    font-size: 12px;
+    padding-left: 14px;}
+.footer_bottom{background: #020101;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: #FFF;
+    margin-top: 7px;}
+.gmn{
+	
+	/*color: #62b7e6;*/
+
+}
+.anchor{color: #4a8cbb; }
+
+
+
+.anchor:hover{ text-decoration: none; cursor:pointer;   color: #62b7e6;}
+
+
+
+.school-logo{
+	   /* width: 207px;
+    height:auto;
+  
+    padding:10px 40px;*/
+   
+}
+
+
+.dashboard-header img{
+	/*width:100%;
+	height:auto;*/
+}
+
+.dh{    padding-bottom: 5px;
+    padding-top: 5px;}
+.sch_logo{height:123px; border: 1px solid #eee;
+    padding: 5px;     border-radius: 5px;}
+
+
+.adr{font-size:19px; text-align: center;   color: #4a8cbb;}
+
+
+
+.sname {
+       font-size: 21px;
+    font-weight: bold;
+    margin-top: 20px;
+   
+    color: #4a8cbb;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.br{ border-right:1px solid #eeeeee;}
+
+
+.bl{ border-left:1px solid #eeeeee;}
+
+
+
+	
+	
+.login_det{z-index: 99999999;padding:20px 10px;  border: 1px solid #EEE; /*margin-left: -15px;*/ min-height:107px; }
+
+
+
+.mycheck{   
+    border: 2px solid #FFF;
+	
+    border-radius: 30px;
+    padding: 8px;
+   position: absolute;
+    right: 0px;
+    top: -10px; 
+    z-index: 9999999;
+	color:#FFF !important;
+
+background-color:#FFF;
+	z-index:-999;
+	
+}
+
+
+/*.col-xx-12:hover .mycheck {
+ 
+	
+
+
+	     
+}*/
+
+
+.col-xx-12:hover .fa-check{
+	
+	z-index:999;
+display:inline !important;
+transition: all 0.8s ease;
+
+  transform: rotate(720deg);  
+background-color:#0AD302;
+	
+
+}
+
+
+
+
+
+
+
+/***********************************************/

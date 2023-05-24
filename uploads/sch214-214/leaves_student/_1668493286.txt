@@ -1,0 +1,87 @@
+
+
+SELECT attendance.status,attendance.date,class_routine_settings.start_time,
+class_routine_settings.end_time
+FROM ".get_school_db()." .attendance
+LEFT JOIN student ON student.student_id = attendance.student_id
+ LEFT JOIN class_routine_settings ON class_routine_settings.section_id = student.section_id
+WHERE attendance.student_id=$stud_id
+AND month(date)=$date_month
+AND attendance .status='1' 
+AND class_routine_settings.is_active = 1
+AND class_routine_settings.school_id=".$_SESSION['school_id']."
+
+
+
+
+SELECT status,date 
+FROM ".get_school_db().".attendance
+LEFT JOIN student ON student.student_id = attendance.student_id
+ LEFT JOIN class_routine_settings ON class_routine_settings.section_id = student.section_id
+ AND class_routine_settings.is_active = 1
+ AND class_routine_settings.school_id = 214
+WHERE student_id=$stud_id AND month(date)=$date_month
+ AND YEAR(date)=$date_year
+ AND school_id=".$_SESSION['school_id']."
+
+new:
+SELECT attendance.status,attendance.date,class_routine_settings.start_time,
+class_routine_settings.end_time FROM indicied_indiciedu_production.attendance
+LEFT JOIN student ON student.student_id = attendance.student_id
+ LEFT JOIN class_routine_settings ON class_routine_settings.section_id = student.section_id
+ AND class_routine_settings.is_active = 1
+WHERE attendance.student_id=$stud_id
+ AND month(date)=$date_month
+ AND YEAR(date)= $date_year
+ AND attendance.school_id=".$_SESSION['school_id']."
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////ghr
+SELECT attendance.status,attendance.date,class_routine_settings.start_time,
+class_routine_settings.end_time FROM ".get_school_db()." .attendance
+     LEFT JOIN ".get_school_db()." .student ON student.student_id = attendance.student_id
+     LEFT JOIN ".get_school_db()." .class_routine_settings ON class_routine_settings.section_id = student.section_id
+     AND class_routine_settings.is_active = 1
+     WHERE attendance.student_id=$stud_id
+     AND month(date)=$date_month
+     AND YEAR(date)= $date_year
+     AND attendance.school_id=".$_SESSION['school_id']."
+
+staff////////// site
+SELECT status,date,attendance_staff.attend_staff_id,attendance_staff_timing.check_in,attendance_staff_timing.check_out
+ FROM indicied_indiciedu_production.attendance_staff
+ LEFT JOIN attendance_staff_timing ON attendance_staff_timing.attend_staff_id = attendance_staff.attend_staff_id
+ WHERE staff_id=26 AND month(date)=11
+ AND YEAR(date)= 2022
+ AND school_id=214
+
+///Code Query////
+SELECT attendance_staff.status,attendance_staff.date,attendance_staff_timing.check_in,attendance_staff_timing.check_out
+FROM ".get_school_db().".attendance_staff
+ LEFT JOIN ".get_school_db()." .attendance_staff_timing ON attendance_staff_timing.attend_staff_id = attendance_staff.attend_staff_id
+ WHERE staff_id=$staff_id
+ AND month(date)=$date_month
+ AND YEAR(date)=$date_year
+ AND school_id=".$_SESSION['school_id']."
+
+/////Parent/// Side//
+select a.status,a.date,attendance_timing.check_in,attendance_timing.check_out
+ FROM indicied_indiciedu_production.attendance a
+ LEFT JOIN attendance_timing ON attendance_timing.attendance_id=a.attendance_id
+ WHERE a.student_id=2 AND month(a.date)=11
+ AND YEAR(a.date)=2022 AND a.school_id=214
+
+code query  ////
+    select a.status,a.date,attendance_timing.check_in,attendance_timing.check_out
+    FROM ".get_school_db().".attendance a
+    LEFT JOIN ".get_school_db()." .attendance_timing ON attendance_timing.attendance_id=a.attendance_id
+    WHERE a.student_id=$stud_id 
+    AND month(a.date)=$date_month 
+    AND YEAR(a.date)=$date_year 
+    AND a.school_id=".$_SESSION['school_id']."
+
+

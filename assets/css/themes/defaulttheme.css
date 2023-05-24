@@ -1,0 +1,300 @@
+/*ADMIN*/
+.page-container .main-content .top_navbar {
+    background: #012b3c !important; 
+}
+.page-container .sidebar-menu {
+    background: #02658d !important;
+}
+.sidebar-menu header.logo-env .logo.text-center {
+    background: #02658d;
+}
+.page-container.sidebar-collapsed .sidebar-menu #main-menu > li > a > span:not(.badge) {
+    background: #000;
+}
+.page-container .sidebar-menu #main-menu li ul > li > a:hover {
+    background-color: #02658d !important;
+}
+.page-container .sidebar-menu #main-menu li.active > a {
+    background-color: #012b3c !important;
+} 
+.page-container .sidebar-menu #main-menu li ul > li > a {
+    background-color: #012b3c !important;
+} 
+.page-container .sidebar-menu #main-menu li a:hover {
+    background-color: #012b3c !important;
+}
+.page-container .sidebar-menu #main-menu .opened li.active > a {
+    background: #02658d !important;
+}
+.nav.nav-tabs a.active {
+    background: #02658d !important; 
+}
+.nav.nav-tabs a:hover {
+    background: #02658d !important; 
+}  
+.nav-tabs { 
+    background: #012b3c; 
+}
+.system_name { 
+    color: #4a8cbb !important; 
+}
+.more {
+    color: #2e83bf !important;
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    background-color: #02658d !important; 
+} 
+.gradientone {
+    background: linear-gradient(301deg, #22dcfd 0, #1c91e2 50%, #5865b9 100%); 
+}
+.gradienttwo {
+    background: linear-gradient(301deg, #3551a4 0, #2c8ec4 50%, #012b3c 100%); 
+}
+.dataTables_wrapper { 
+    background: #012b3c;
+}
+.tcher-dboard .box .box-header.with-border {
+    background: #0992c9; 
+}
+.tcher-dboard .table-bordered > thead > tr > td, .tcher-dboard .table-bordered > thead > tr > th {
+    background-color: #0992c9 !important;
+}
+.nc_month_heading {
+    background: #012b3c;
+    border: 1px solid #012b3c;
+}
+.btn {
+    background: #02658d  !important;   
+    border: #02658d  1px solid !important;
+}
+.btn-group .dropdown-menu {
+    background: #012b3c !important;
+} 
+.btn:hover { 
+    background: #000 !important;
+}
+.table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    background-color: #0992c9 !important
+}
+div#attendance thead tr th {
+    background: #02658d !important;
+}
+.filterContainer {
+    border: 1px solid #000 !important;
+    background: #000 !important;
+}
+.filterContainer .btn {
+    background: #02658d !important;
+    border: #fff 1px solid !important;
+}
+.filterContainer .modal_save_btn {
+    background: #02658d !important;
+    border: #ffffff 1px solid !important;
+}
+.filterContainer .modal_save_btn:hover, .filterContainer .btn:hover {
+    background: transparent !important;
+}
+.btn.btn-danger {
+    background-color: #b70808!important; 
+}
+.bg-primary {
+    background-color: #02658d !important;
+}
+.filterContainer .btn-primary:hover, .filterContainer input#submit_filter:hover {
+    background: #0992c9 !important;
+} 
+.page-body .dataTables_wrapper .dataTables_paginate .paginate_button:hover { 
+    background: #02658d !important;
+}
+a#DataTables_Table_1_previous {
+    background: #02658 !important;
+    color: #fff !important;
+}
+.dataTables_wrapper .dataTables_paginate span .paginate_button.current {
+    background: #02658d !important; 
+}
+.modal_save_btn {
+    background-color: #02658d !important;
+    border: 1px solid #02658d; 
+}
+.modal_save_btn:hover {
+    background-color: #09537f !important;
+}
+.panel-default > .panel-heading {
+    background-color: #012b3c;
+    border-color: #43b7f0;
+}
+.panel-default > .panel-heading:hover {
+    background-color: #033e56;
+    border-color: #1db8f8;
+}
+.panel-group.joined>.panel>.panel-heading {
+    background-color: #012b3c !important;
+}
+.student-panel .panel-group.joined > .panel > .panel-heading {
+    background-color: #012b3c !important;
+}
+.class_routine_panel .panel-heading>.panel-title {
+    background-color: #012b3c;
+}
+.class_routine_panel span.green {
+    color: #fff;
+}
+#navbar { 
+    background-color: #012b3c !important;  
+}
+.sent_msg p {
+    background: #0465ac !important; 
+}
+.msg_send_btn {
+    background: #012b3c none repeat scroll 0 0 !important; 
+}
+.profile-info.dropdown .dropdown-menu {
+    background-color: #012b3c;
+    border-color: #3f484c;
+} 
+.notifications.dropdown .dropdown-menu>li { 
+    background-color: #02658d; 
+}
+.notifications.dropdown .dropdown-menu > li > ul > li {
+    background: #02658d;
+}
+.notifications.dropdown .dropdown-menu > li > ul > li > a:hover, .notifications.dropdown .dropdown-menu > li > ul > li > p:hover {
+    background-color: #02658d !important;
+}
+#modal_ajax .panel-title { 
+    background: #0073b7; 
+}
+#modal_ajax .panel-heading {
+    background-color: #0073b7 !important;
+}
+.modal .modal-header .close { 
+    padding: 5px 7px 2px 6px; 
+}
+div#myModal .modal-header {
+    background: #02658d;
+    padding: 10px 15px;
+}
+div#myModal .modal-header h4.modal-title {
+    color: #fff;
+}
+.coact {
+    background-color: #012b3c !important;
+    color: #fff !important;
+}
+.tree li {
+    padding: 5px 5px 0px 1em !important;
+    background: #02658d2e !important;
+    border-bottom: solid 1px #fff !important;
+}
+.tree li a {
+    color: #000 !important
+}
+.tree li a i::before {
+    color: #012b3c !important;
+    margin: 4px;
+}
+.diary-tree li span {
+    background:#02658d ;
+}
+.diary-tree li span:hover {
+    background: #012b3c; 
+}
+.diary-tree li::after{
+    border-top:2px solid #02658d ;
+}
+.diary-tree li::before {
+    border-left: 2px solid #02658d ; 
+}
+.row.diary-headr {
+    background:#02658d;
+}
+.row.diary-foter {
+    background:#02658d; 
+}
+.diary-roww {
+    border:solid 2px #02658d;
+}
+.row.diary-duedate {
+    background: #012b3c;
+}
+.diary-foter .btn {
+    background: #012b3c !important;
+    border: #012b3c 1px solid !important;
+}
+.current-day {  
+    background: #29638d !important;
+    border: 2px solid #d8bfd8!important;
+} 
+.present {
+    background: #95e19b !important;
+}
+.weekend {
+    background: #02bac3 !important;
+}
+.leave {
+    background: #e5cf0e !important;
+}
+.absent {
+    background: #ed1c1c !important;
+} 
+.today-legend {
+    background: #29638d !important;
+} 
+.holiday {
+    background: #975cff !important;
+    opacity: 1 !important;
+}
+form#save_addendance .myttl { 
+    color: #ffffff; 
+} 
+tr.present.current-day td {
+    background: #29638d  ;
+}
+.well {
+    background: #3d8bab !important;
+}
+.attndnce-dashbrd .well {
+    height: 160px;
+}
+.well .col-lg-12 lable {
+    color: white;
+}
+.well .col-sm-12 lable {
+    color: white;
+}
+.well h4 {
+    color:white !important;
+}
+#calendar_view_container table td li span { 
+    color: #02658d !important; 
+}
+.week_name {
+    background: #02658d !important; 
+}
+#calendar_view_container .highlight_day {
+    background-color: #02658d !important;
+}
+#calendar_view_container .set-evnt-ltst {
+    background: #012b3c !important;
+}
+#calendar_view_container table td {
+    border: 2px solid #02658d21 !important
+}
+/*TEACHER*/
+
+.sidebar-menu-inner.tcher-sidebar {
+    background: #0992c9;
+} 
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #0073b7!important;
+    border: 1px solid #0073b7;
+    border-bottom-color: #0073b7;
+}
+.tm_tbl h3 {
+    color: #ffff !important;
+}
+.tm_tbl {
+    background: #0992c9 !important;
+    padding: 8px;
+}

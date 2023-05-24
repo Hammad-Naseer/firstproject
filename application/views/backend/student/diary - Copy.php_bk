@@ -1,0 +1,343 @@
+﻿
+<style>
+
+	.myfst{
+		
+		font-size:15px; color:#0A73B7; font-weight:bold;
+		
+		
+	}
+	.due{color:#972d2d;}
+	.mygrey{color:#A6A6A6;}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+
+
+
+
+
+<div class="col-lg-12 col-md-12 col-sm-12 myt topbar">
+                    <h3 class="system_name inline">
+                      <!--  <i class="entypo-right-circled carrow">
+                        </i>-->
+                    Class Diary
+                    </h3>
+                    
+                  
+                    </div>
+
+    <?php
+    $sub_arr = $this->db->query("select sub.* from ".get_school_db().".subject sub
+    	inner join ".get_school_db().".subject_section ss on sub.subject_id=ss.subject_id 
+    	where ss.section_id = ".$_SESSION['section_id']."
+    	and ss.school_id = ".$_SESSION['school_id']."
+    	")->result_array();
+    
+    ?>
+	<div class="col-sm-12">
+	   <div class="row thisrow">
+	  
+	    <form id="subject_filter" method="post" action="<?php echo base_url();?>parents/diary" class="form-horizontal validate" novalidate="novalidate">
+	        <div class="col-md-4 col-lg-4 col-sm-4">
+	            <select id="subject_id" name="subject_id" class="form-control"  data-message-required="Required">
+	                <option value="">Select Subject</option>
+	                <?php
+	                $sub_sel = '';
+	                foreach ($sub_arr as $key => $value) 
+	                {
+	                	if ($value['subject_id'] == $sub_filter)
+	                		$sub_sel = 'selected';
+	                	echo "<option value='".$value['subject_id']."' $sub_sel>".$value['name'].' - '.$value['code']."</option>";
+	                }
+	                ?>
+	            </select>    
+	        </div>
+
+	        <div class="col-md-4 col-lg-4 col-sm-4">
+	        	<input id="date_id" name="date" class="form-control datepicker" value="<?php echo  $date_filter;?>"> 
+	        </div>
+	        
+	        <div class="col-md-4 col-lg-4 col-sm-4">
+	            <input type="submit" class="btn btn-primary" value="Submit" >
+	        </div>
+
+	        <?php
+	        if($filter)
+			{?>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<a href="<?php echo base_url()?>parents/diary" class="btn btn-danger" >
+						<i class="fa fa-remove"></i>Remove Filters
+					</a>
+				</div>
+			<?php
+			}
+			?>
+	    </form>
+	    </div>
+	</div>
+	
+	<div class="col-md-12">
+    
+    	<!--CONTROL TABS START-->
+		
+
+		
+    	<!--CONTROL TABS END-->
+	         
+            <!--TABLE LISTING STARTS-->
+            
+				
+                <table class="table table-bordered datatable  table-hover  cursor" id="table_export">
+                	<thead>
+                		<tr>
+                            <th  style="width:20px;"><div>#</div></th>
+                               <th style="width:130px;"><div><?php echo get_phrase('Subject');?></div></th>
+                            <th style="width:120px;"><div><?php echo get_phrase('teacher_name');?></div></th>
+							<th style="width:90px;"><div><?php echo get_phrase('assign_date');?></div></th>
+                            <th ><div><?php echo get_phrase('details');?></div></th>
+                            
+                        </tr>
+					</thead>
+                    <tbody>
+                    	<?php $count1 = 1; 
+                        
+                        foreach($diary as $row){
+                        ?>
+                        <tr>
+                            <td><?php echo $count1++; ?></td>
+                          
+                               
+              
+                           <td>
+                            <?php echo get_subject_name($row['subject_id']);
+							?> 
+                            </td>      
+                                             
+                                               
+                             <td>
+                                <?php echo get_teacher_name($row['teacher_id'])?>
+                                <br>
+                            </td>
+                            
+                            
+                            
+                            
+                            
+                              <td>  <?php   echo convert_date($row['assign_date']); ?> </td>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <td>
+                            <span class="myfst">
+                                  <?php 
+				
+                             
+								echo $row['title'];
+							
+							?>
+								</span>
+                <?php
+                /*
+                            $planner_arr=array(); 
+                            $planner_arr=diary_planner_task($row['diary_id']);
+                            $count=1;
+                            foreach($planner_arr as $plan)
+                            {
+                                echo $count.")"."&nbsp;".$plan['title'];
+                               
+                                $count++;
+                            }
+							
+							*/
+                                if($row['attachment']!="")
+                                {
+                                   
+									?>
+									<a target="_blank" href="<?php echo display_link($row['attachment'],'diary');?>"><span class="glyphicon glyphicon-download-alt"></span></a>
+                             <?php
+                                } 
+    
+                            ?>
+							
+							
+							
+							
+							
+							
+							
+							<br>
+							
+								<span class=" due">				
+                              <?php echo"(Due Date: ".convert_date($row['due_date']);  echo")";
+                     
+													?>
+                </span>
+							
+							
+							
+						<?php	
+							
+							
+							
+							
+							
+							
+                              
+                                echo "<br/>Detail: <span class='item'> ".$row['task'];
+                                echo'</span>';
+							
+							
+							
+							
+							
+							?>
+							
+							
+							
+							
+							
+							
+							
+							<span class="mygrey">
+							
+							
+							
+								<?php
+					/*		    echo "<br/> ".get_student_name($row['student_id']);  
+						
+                      
+								
+								     if($row['section_id']!='')
+                                {
+                                  
+                                    echo " / ".$row['department'];
+                               
+                                    echo " / ".$row['class_name'];
+                           
+                                    echo " / ".$row['class_section'];
+                                
+                                }
+								
+*/
+                            		
+							
+								?>
+							
+							
+							
+							</span>
+							
+							<br>
+							<span class="pull-right mygrey">
+								
+								
+								<?php
+								
+					/*			
+									     echo $row['yearly_title']; 
+                            echo " / ".$row['yearly_title'];
+
+								*/
+								?>
+								
+								
+								
+							</span>
+							
+							
+							
+							
+							
+							
+							
+               </td>
+                    
+                            
+               
+                            
+                        </tr>
+                        <?php
+                         }?>
+                    </tbody>
+                </table>
+			
+            <!--TABLE LISTING ENDS-->
+	
+	</div>
+</div>
+
+
+<!--  DATA TABLE EXPORT CONFIGURATIONS -->                      
+<script type="text/javascript">
+	jQuery(document).ready(function($)
+	{
+		//var datatable = $("#table_export").dataTable();
+		
+		$(".dataTables_wrapper select").select2({
+			minimumResultsForSearch: -1
+		});
+	});
+</script>
+
+
+<script>
+
+
+
+$(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar =500;  // How many characters are shown by default
+    var ellipsestext = "...";
+ var moretext = " Show more >>";
+    var lesstext = " << Show less";
+    
+
+    $('.item').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span><a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+
+
+</script>

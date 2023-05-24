@@ -1,0 +1,172 @@
+﻿<?php 
+$edit_data		=	$this->db->get_where(get_school_db().'.circular' , array('circular_id' => $param2,'school_id' =>$_SESSION['school_id']) )->result_array();
+?>
+<div class="tab-pane box active" id="edit" style="padding: 5px">
+    <div class="box-content">
+        <?php foreach($edit_data as $row): ?>
+        <?php echo form_open_multipart(base_url().'teacher/circulars/do_update/'.$row['circular_id'] , array('class' => 'form-horizontal form-groups-bordered validate','target'=>'_top'));?>
+            <div class="padded">
+                <div class="form-group">
+                    <label class="col-lg-3 col-md-3 col-sm-3 control-label"><?php echo get_phrase('title');?></label>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <input type="text" class="form-control" name="circular_title" value="<?php echo $row['circular_title'];?>"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 col-md-3 col-sm-3 control-label"><?php echo get_phrase('notice');?></label>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <div class="box closable-chat-box">
+                            <div class="box-content padded">
+                                    <div class="chat-message-box">
+                                    <textarea name="circular" id="ttt" rows="5" class="form-control"
+                                    	placeholder="<?php echo get_phrase('add_circular');?>"><?php echo $row['circular'];?></textarea>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<div class="form-group" id="class1">
+                                <label class="col-lg-3 col-md-3 col-sm-3 control-label"><?php echo get_phrase('select_class');?></label>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                    <div class="box closable-chat-box">
+                                        <div class="box-content padded">
+                                                <div class="chat-message-box">
+        <?php //echo $row['class_id'];
+        
+        $class_qur=$this->db->query("select * from ".get_school_db().".class where school_id=".$_SESSION['school_id']." and class_id=".$row['class_id'])->result_array(); 
+        
+      // print_r($class_qur);
+       
+       echo $class_qur[0]['name'];
+    
+       
+        
+    ?> 
+                                           
+<!-- class selector 
+                              
+<select name="class_id" id="class_id" class="form-control">
+<option value="">Select a class</option>
+<?php 
+                                                    $classes	=	$this->db->get(get_school_db().'.class')->result_array();
+                                                    foreach($classes as $row1):?>
+                                                    <option value="<?php echo $row1['class_id'];?>"
+                                                        <?php if(isset($row['class_id']) && $row['class_id']==$row1['class_id'])echo 'selected="selected"';?>>
+                                                            <?php echo $row1['name'];?>
+                                                                </option>
+                                                    <?php
+													if(isset($row['class_id']) && $row['class_id']==$row1['class_id']) { ?>
+													<script>document.getElementById('class1').style.display='block';</script>
+													<?php } ?>
+                                                    <?php endforeach;?>
+                                                </select>
+ 
+ 
+ 
+ -->
+ 
+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                <div 
+
+                 class="form-group" id="students1" >
+                                <label class="col-lg-3 col-md-3 col-sm-3 control-label"><?php echo get_phrase('select_student');?></label>
+                                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                    <div class="box closable-chat-box">
+                                        <div class="box-content padded">
+                                                <div class="chat-message-box">
+
+
+<select name="student_id" id="student_id" class="form-control">
+<option value="">Select a Student</option>
+<?php 
+
+
+$students = $this->db->query("select name,student_id,school_id from ".get_school_db().".student where school_id=".$_SESSION['school_id']." and class_id=".$row['class_id'])->result_array();
+
+//print_r($students);
+
+foreach($students as $row2):
+
+?>
+<option value="<?php echo  $row2['student_id']; ?>" 
+<?php if($row2['student_id']==$edit_data[0]['student_id']){
+	echo "selected";
+	
+} ?>
+
+
+><?php echo  $row2['name']; ?></option>
+
+
+<?php endforeach; ?>
+</select>
+
+
+
+ </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="form-group">
+<label class="col-lg-3 col-md-3 col-sm-3 control-label"><?php echo get_phrase('date');?></label>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+<input type="text" class="datepicker form-control" name="create_timestamp" value="<?php 
+
+$date_exp=explode('-',$row['create_timestamp']);
+
+echo $date_exp[1].'/'.$date_exp[2].'/'.$date_exp[0];
+ 
+ 
+  ?>"/>
+</div>
+ </div>
+ 
+  <div class="form-group">
+						<label for="field-1" class="col-sm-3 control-label"><?php echo get_phrase('attachment');?></label>
+                        
+						<div class="col-sm-5">
+							
+								
+								<?php
+								if($row['attachment']=="")
+    {?>
+		
+	<?php }
+	else
+	{?>
+		<a target="_blank" href="<?php echo base_url();?>uploads/circular_image/<?php echo $row['attachment'];?>">[View attachment]</a>
+	<?php }?>
+									
+									 <input type="hidden"  name="attach_hidden" value="<?php echo $row['attachment'];?>" class="form-control">
+								
+								
+								<div>
+									<span class="btn btn-white btn-file">
+										<span class="fileinput-new">Select file</span>
+										
+										<input type="file" name="attach_file">
+									</span>
+									
+								</div>
+							
+						</div>
+					</div>
+</div>
+<div class="form-group">
+<div class="col-sm-offset-3 col-lg-9 col-md-9 col-sm-9 col-xs-9">
+ <button type="submit" class="btn btn-info"><?php echo get_phrase('edit_circular');?></button>
+                  </div>
+            </div>
+        </form>
+        <?php endforeach;?>
+    </div>
+</div>

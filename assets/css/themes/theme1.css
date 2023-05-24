@@ -1,0 +1,304 @@
+/*ADMIN*/
+.page-container .main-content .top_navbar {
+    background: #1a7866 !important; 
+}
+.page-container .sidebar-menu {
+    background: #1a7866 !important 
+}
+.sidebar-menu header.logo-env .logo.text-center {
+    background: #1a7866 !important;
+}
+.page-container.sidebar-collapsed .sidebar-menu #main-menu > li > a > span:not(.badge) {
+    background: #586e06;
+}
+.page-container .sidebar-menu #main-menu li ul > li > a:hover {
+    background-color: #586e06  !important;
+}
+.page-container .sidebar-menu #main-menu li.active > a {
+    background-color: #586e06 !important;
+} 
+.page-container .sidebar-menu #main-menu li ul > li > a {
+    background-color: #1a7866 !important;
+} 
+.page-container .sidebar-menu #main-menu li a:hover {
+    background-color: #1a7866 !important;
+}
+.page-container .sidebar-menu #main-menu .opened li.active > a {
+    background: #586e06 !important;
+}
+.nav.nav-tabs a.active {
+    background: #586e06 !important; 
+}
+.nav.nav-tabs a:hover {
+    background: #586e06 !important; 
+} 
+.nav-tabs { 
+    background: #1a7866; 
+}
+.system_name { 
+    color: #586e06 !important; 
+}
+.MORE {
+    COLOR: #586e06 !IMPORTANT;
+}
+.more {
+    display: block;
+    text-align: center;
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    background-color: #1a7866 !important; 
+}
+.gradientone {
+    background: linear-gradient(301deg, #586e06 0, #1a7866 50%, #586e06 100%);
+}
+.gradienttwo {
+    background: linear-gradient(301deg, #159215 0, #1a7866 50%, #586e06 100%);
+}
+.dataTables_wrapper { 
+    background: #1a7866;
+}
+.tcher-dboard .box .box-header.with-border {
+    background: #1a7866; 
+}
+.tcher-dboard .table-bordered > thead > tr > td, .tcher-dboard .table-bordered > thead > tr > th {
+    background-color: #1a7866 !important;
+}
+.nc_month_heading {
+    background: #586e06;
+    border: 1px solid #586e06;
+}
+.btn {
+    background: #586e06 !important;   
+    border: #586e06 1px solid !important;
+}
+.btn-group .dropdown-menu {
+    background: #586e06 !important;
+}
+.btn:hover { 
+    background: #1a7866 !important;
+}
+.table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    background-color: #586e06 !important; 
+}
+div#attendance thead tr th {
+    background: #1a7866 !important;
+}
+.filterContainer {
+    border: 1px solid #586e06 !important;
+    background: #586e06 !important;
+}
+.filterContainer .btn {
+    background: #1a7866 !important;
+    border: #ffffff 1px solid !important;
+}
+.filterContainer .modal_save_btn {
+    background: #1a7866 !important;
+    border: #ffffff 1px solid !important;
+}
+.filterContainer .modal_save_btn:hover, .filterContainer .btn:hover {
+    background: transparent !important;
+}
+.btn.btn-danger {
+    background-color: #b70808!important; 
+}
+.bg-primary {
+    background-color: #1a7866 !important;
+}
+.filterContainer .btn-primary:hover, .filterContainer input#submit_filter:hover {
+    background: #586e06 !important;
+}
+.page-body .dataTables_wrapper .dataTables_paginate .paginate_button:hover { 
+    background: #586e06 !important;
+} 
+a#DataTables_Table_1_previous {
+    background: #586e06 !important;
+    color: #fff !important;
+}
+.dataTables_wrapper .dataTables_paginate span .paginate_button.current {
+    background: #586e06 !important; 
+}
+.modal_save_btn {
+    background-color: #586e06 !important;
+    border: 1px solid #586e06; 
+}
+.modal_save_btn:hover {
+    background-color: #1a7866 !important;
+}
+.panel-default > .panel-heading {
+    background-color: #1a7866;
+    border-color: #2ce4c1;
+}
+.panel-default > .panel-heading:hover {
+    background-color: #586e06;
+    border-color: #146656;
+}
+.panel-group.joined>.panel>.panel-heading {
+    background-color: #1a7866 !important;
+}
+.student-panel .panel-group.joined > .panel > .panel-heading {
+    background-color: #1a7866 !important;
+}
+.class_routine_panel .panel-heading>.panel-title {
+    background-color: #1a7866;
+}
+.class_routine_panel span.green {
+    color: #fff;
+}
+#navbar { 
+    background-color: #1a7866 !important;  
+}
+.sent_msg p {
+    background: #586e06 !important;
+}
+.msg_send_btn {
+    background: #1a7866 none repeat scroll 0 0 !important;
+}
+.profile-info.dropdown .dropdown-menu {
+    background-color: #586e06;
+    border-color: #586e06;
+}
+.notifications.dropdown .dropdown-menu>li { 
+    background-color: #1a7866; 
+}
+.notifications.dropdown .dropdown-menu > li > ul > li {
+    background: #1a7866;
+}
+.notifications.dropdown .dropdown-menu > li > ul > li > a:hover, .notifications.dropdown .dropdown-menu > li > ul > li > p:hover {
+    background-color: #586e06 !important;
+}
+#modal_ajax .panel-title {
+    background: #1a7866;
+}
+#modal_ajax .panel-heading {
+    background-color: #1a7866 !important;
+}
+.modal .modal-header .close { 
+    padding: 5px 7px 2px 6px; 
+}
+div#myModal .modal-header {
+    background: #1a7866;
+    padding: 10px 15px;
+}
+div#myModal .modal-header h4.modal-title {
+    color: #fff;
+}
+.coact {
+    background-color: #1a7866 !important;
+    color: #fff !important;
+}
+.tree li {
+    padding: 5px 5px 0px 1em !important;
+    background: #1a786629 !important;
+    border-bottom: solid 1px #fff !important;
+}
+.tree li a {
+    color: #000 !important
+}
+.tree li a i::before {
+    color: #1a7866 !important;
+    margin: 4px;
+}
+.diary-tree li span {
+    background:#586e06 ;
+}
+.diary-tree li span:hover {
+    background: #1a7866; 
+}
+.diary-tree li::after{
+    border-top:2px solid #586e06 ;
+}
+.diary-tree li::before {
+    border-left: 2px solid #586e06 ; 
+}
+.row.diary-headr {
+    background:#586e06;
+}
+.row.diary-foter {
+    background:#586e06; 
+}
+.diary-roww {
+    border:solid 2px #586e06;
+}
+.row.diary-duedate {
+    background: #1a7866;
+}
+.diary-foter .btn {
+    background: #1a7866 !important;
+    border: #1a7866 1px solid !important;
+}
+.current-day {
+    background: #586e06 !important;
+    border: 2px solid #1a7866!important;
+}  
+.present {
+    background: #95e19b !important;
+}
+.weekend {
+    background: #02bac3 !important;
+}
+.leave {
+    background: #e5cf0e !important;
+}
+.absent {
+    background: #ed1c1c !important;
+}
+.today-legend {
+    background: #586e06 !important;
+}
+.holiday {
+    background: #975cff !important;
+    opacity: 1 !important;
+} 
+form#save_addendance .myttl { 
+    color: #ffffff; 
+}
+tr.present.current-day td {
+    background: #586e06;
+}
+.well {
+    background: #33a992 !important;
+}
+.attndnce-dashbrd .well {
+    height: 160px;
+}
+.well .col-lg-12 lable {
+    color: white;
+}
+.well .col-sm-12 lable {
+    color: white;
+}
+.well h4 {
+    color:white !important;
+}
+#calendar_view_container table td li span { 
+    color: #586e06 !important; 
+}
+.week_name {
+    background: #586e06 !important; 
+}
+#calendar_view_container .highlight_day {
+    background-color: #586e06 !important;
+}
+#calendar_view_container .set-evnt-ltst {
+    background: #1a7866 !important;
+}
+#calendar_view_container table td {
+    border: 2px solid #586e061f !important
+}
+/*TEACHER*/
+
+.sidebar-menu-inner.tcher-sidebar {
+    background: #1a7866 ;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    background-color: #1a7866!important;
+    border: 1px solid #1a7866;
+    border-bottom-color: #1a7866;
+}
+.tm_tbl h3 {
+    color: #ffff !important;
+}
+.tm_tbl {
+    background: #1a7866 !important;
+    padding: 8px;
+}

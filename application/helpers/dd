@@ -1,0 +1,68 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 04, 2017 at 09:05 AM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 5.6.30
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `gsims`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `school_coa`
+--
+
+CREATE TABLE `school_coa` (
+  `school_coa_id` int(11) NOT NULL,
+  `school_id` int(11) NOT NULL,
+  `coa_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `school_coa`
+--
+
+INSERT INTO `school_coa` (`school_coa_id`, `school_id`, `coa_id`) VALUES
+(1, 212, 1),
+(2, 212, 2),
+(3, 212, 8),
+(4, 212, 10),
+(5, 212, 11),
+(6, 212, 101);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `school_coa`
+--
+ALTER TABLE `school_coa`
+  ADD PRIMARY KEY (`school_coa_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `school_coa`
+--
+ALTER TABLE `school_coa`
+  MODIFY `school_coa_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

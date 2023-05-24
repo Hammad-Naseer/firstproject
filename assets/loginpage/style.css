@@ -1,0 +1,140 @@
+#forgotdiv {
+display:none;
+}
+
+
+.main-container {
+  background-image: url("indiciloginbgIMG4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+
+} 
+.loginimg-left {
+    max-width: 80%;
+}
+
+img.indici-edu, img.indici-edu-ftr-logo{
+    width: 283px;
+}
+
+.main-container .col-md-6 {
+    padding: 85px 0px 130px;
+}
+#forgotdiv {
+    padding: 45px 0px 85px;
+    display: none;
+}
+div#g-recaptcha-error  {
+     text-align: left;  
+}
+form.login-form, form.login-form-forgot {
+    padding: 0px 85px !important;
+}
+#basic-addon1 {
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+        background: #efefef;
+        padding-right: 0;
+        padding-left: 20px;
+}
+.form-control{
+    background-color: #efefef !important;
+  }
+  .form-control:focus { 
+    background-color: #efefef  !important;
+    border-color: #efefef  !important;
+    outline: 0;
+    box-shadow: none;
+}
+
+input {
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+    height: 70px;
+    border-left: 0px !important;
+}
+.btn-primary {
+    min-width: 49%;
+    border-radius: 50px;
+    background: #1f396f;
+        height: 60px;
+    border:  none !important;
+}
+.btn-primary:hover { 
+    background: #00b2e4; 
+}
+
+.footer-top {
+    background: #333333;
+    padding: 42px 0px;
+}
+.footer-top img.indici-edu-ftr-logo {
+    border-right: solid 3px #0dcaf0;
+    padding: 10px; 
+}
+.hr-seting {
+    margin-top: -48px;
+    margin-bottom: 73px;
+}
+.hr-seting {
+    margin-top: -48px;
+    margin-bottom: 73px;
+    color: #0dcaf0;
+    opacity: 1;
+}
+.footer-bottom {
+    background: #121212;
+    color: #fff;
+}
+.footr-barcode {
+    width: 210px;
+    background: #fff;
+}
+ul.footr-li-list {
+    list-style: none; 
+}
+ul.footr-li-list li a {
+    color: #fff !important;
+    text-decoration: none;
+}
+ul.footr-li-list li a:hover {
+    color: #0dcaf0 !important; 
+}
+ul.footr-li-list li a i {
+    padding: 0px 7px;
+    margin-left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+img.indici-edu-ftr-logo {
+    width: 370px;
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footer-top img.indici-edu-ftr-logo {
+    border: none;
+    padding: 10px; 
+}
+}
+
+@media only screen and (max-width: 475px) {
+  ul.footr-li-list { 
+    margin: 0;
+    padding-left: 0;
+}
+ul.footr-li-list li a i { 
+    margin-left: 5px;
+}
+.main-container .col-md-6 {
+    padding: 30px 0px 60px;
+}
+}
+
+@media only screen and (max-width: 475px) {
+ form.login-form {
+    padding: 0px 0px !important;
+}
+}

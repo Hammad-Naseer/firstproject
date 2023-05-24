@@ -1,0 +1,6 @@
+{
+  “firstName”: “Jonathan”,
+  “lastName”: “Freeman”,
+  “loginCount”: 4,
+  “isWriter”: true,  
+}

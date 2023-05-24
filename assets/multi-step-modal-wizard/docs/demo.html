@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+    <title>Multi-step Modal Wizard Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/MultiStep.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/MultiStep-theme.min.css">
+    <style type="text/css">
+    body {
+        margin: 0
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+            <h1 id="project_title"><a href="#">Multi-step Modal Wizard Example</a></h1>
+        </header>
+    </div>
+    <div class="jquery-script-ads" style="margin:30px auto" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+            <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#submitModal">Open modal</button>
+        </section>
+    </div>
+    <div id="submitModal" class="multi-step">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dist/js/MultiStep.min.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function() {
+        $('.modal').MultiStep({
+            title:'Multi modal',
+            data:[{
+                content:'Hi!!',
+                label:'Custom label'
+            },{
+                content:'This is a multi-step modal'
+            },{
+                content:`You can have skip options`,
+                skip:true
+            },{
+                content:`<small>You can include html content as well!</small><br><br>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                `,
+                skip:true
+            },{
+                content:`This is the end<br>Hold your breath and count to ten`,
+            }],
+            final:'You can have your own final message',
+            modalSize:'lg'
+        });
+    });
+    </script>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

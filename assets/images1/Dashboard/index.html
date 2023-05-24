@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dashboard</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+
+<body>
+<header> 
+  <!-- Header Starts-->
+  <div class="container dashboard">
+    <div class="row dh">
+      <div class="col-lg-3 col-md-3 col-sm-3 ">
+        <center>
+          <div class="school-logo"> <img src="images/other-logo.png" class="img-responsive sch_logo"  alt="School Logo" /> </div>
+        </center>
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-5">
+        <p  class="sname">Air Foundation School System</p>
+        <p class="adr"> Pak PWD islamabad, Pakistan</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 pdtt topbar2 login_det" >
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"> <img src="http://dev.gminns.com/sms/uploads/bg10.jpg " style="height:70px;; width:70px; "> </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+          <div style=" color:#818da1; font-weight:200; margin-top:5px; margin-bottom:5px;"> 
+            <!---    <span style="padding-right:20px;">Login Type: </span>   ---> 
+            <i class="entypo-right-circled"></i>Admin </div>
+          <div class="bst" style="margin-top:5px; margin-bottom:5px;"> 
+            <!--- <span style="padding-right:48px;">Name: </span>-----> 
+            <a href="#" class=" white dropdown-toggle" data-toggle="dropdown" data-close-others="true"> <i class="entypo-user"></i> Air Foundation School Admin</a> </div>
+          <div class="bst" style="color:#970000; margin-top:5px;"> <i class="entypo-logout right" style="/*padding-left:88px;*/"></i> <a class="white  " href="http://dev.gminns.com/sms/index.php?login/logout" style="color:#970000;"> Log Out </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header Ends --> 
+</header>
+<div class="container">
+  <div class="row"> 
+    <!--  Dashboard Menu Starts -->
+    
+    <div class="col-lg-3 col-md-3 col-sm-3 ">
+      <ul class="dashboard-listing">
+        <li style="background:url(images/dashboard.png);"><a href="#">Dashboard</a></li>
+        <li style="background:url(images/school-profiling.png);"><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#collapse1"  data-toggle="collapse">School Profiling</a>
+          <ul id="collapse1" class="collapse">
+          <span class="fa fa-address-book myicon " style=""></span>  <li style="background:url(images/school-configuration.png);"><a href="#">School Configuration</a></li>
+            <li style="background:url(images/policies.png);"><a href="#">Policies</a></li>
+            <li style="background:url(images/academic-year&term.png);"><a href="#">Academic Year & Terms</a></li>
+            <li style="background:url(images/chart-of-accounts.png);"><a href="#">Chart of Accounts</a></li>
+            <li style="background:url(images/fee-type-ixon.png);"><a href="#">Fee Types</a></li>
+            <li style="background:url(images/discount-type-icon.png);"><a href="#">Discount Type</a></li>
+            <li style="background:url(images/department-icon.png);"><a href="#">Department</a></li>
+            <li style="background:url(images/class-icon.png);"><a href="#">Classes</a></li>
+            <li style="background:url(images/section-icon.png);"><a href="#">Section Listing</a></li>
+            <li style="background:url(images/challan-form-setting.png);"><a href="#">Challan Form Settings</a></li>
+            <li style="background:url(images/challan-form-icon.png);"><a href="#">Manage Challan Form </a></li>
+            <li style="background:url(images/time-table-setting-icon.png);"><a href="#">Time Table Settings</a></li>
+          </ul>
+        </li>
+        <li style="background:url(images/students.png);"><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#collapse2"  data-toggle="collapse">Manage Students</a>
+          <ul id="collapse2" class="collapse">
+            <li style="background:url(images/student-add.png);"><a href="#">New Addmission</a></li>
+            <li style="background:url(images/student-list.png);"><a href="#">Candidate list</a></li>
+            <li style="background:url(images/student-info.png);"><a href="#">Students</a></li>
+            <li style="background:url(images/exam.png);"><a href="#">Exam Result</a></li>
+            <li style="background:url(images/parents.png);"><a href="#">Parents</a></li>
+          </ul>
+        </li>
+        <li style="background:url(images/principal.png);"><a href="#">Manage Staff</a></li>
+        <li style="background:url(images/teacher.png);"><a href="#">Teacher</a></li>
+        <li style="background:url(images/subject.png);"><a href="#">Subject</a></li>
+        <li style="background:url(images/time-table.png);"><a href="#">Time Table</a></li>
+        <li style="background:url(images/academic-planner.png);"><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#collapse3"  data-toggle="collapse">Academic Year</a>
+          <ul id="collapse3" class="collapse">
+            <li style="background:url(images/planner-view-2.png);"><a href="#">View Planner</a></li>
+            <li style="background:url(images/manage-planner.png);"><a href="#">Manage Planner</a></li>
+          </ul>
+        </li>
+        <li style="background:url(images/attendance.png);"><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#collapse4"  data-toggle="collapse">Attendance</a>
+          <ul id="collapse4" class="collapse">
+            <li style="background:url(images/student-attendance.png);"><a href="#">Student Attendance</a></li>
+            <li style="background:url(images/teacher-attendance.png);"><a href="#">Teacher Attendance</a></li>
+          </ul>
+        </li>
+        <li style="background:url(images/leave-2.png);"><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#collapse5"  data-toggle="collapse">Manage Leaves</a>
+          <ul id="collapse5" class="collapse">
+            <li style="background:url(images/add-leave-icon.png);"><a href="#">Manage categories</a></li>
+            <li style="background:url(images/student-leaves.png);"><a href="#">Student leaves</a></li>
+            <li style="background:url(images/teacher-leaves-icon.png);"><a href="#">Teacher leaves</a></li>
+          </ul>
+        </li>
+        <li style="background:url(images/exam.png);"><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#collapse6"  data-toggle="collapse">Exam</a>
+          <ul id="collapse6" class="collapse">
+            <li style="background:url(images/exam-list.png);"><a href="#">Exam list</a></li>
+            <li style="background:url(images/exam-grades.png);"><a href="#">Exam Grade</a></li>
+            <li style="background:url(images/exam-marks.png);"><a href="#">Exam Marks</a></li>
+            <li style="background:url(images/manage-datesheet-icon.png);"><a href="#">Manage Datesheet</a></li>
+          </ul>
+        </li>
+        <li style="background:url(images/notice-icon.png);"><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#collapse7"  data-toggle="collapse">Notices</a>
+          <ul id="collapse7" class="collapse">
+            <li style="background:url(images/notice-board.png);"><a href="#">Notice Board</a></li>
+            <li style="background:url(images/circular-icon.png);"><a href="#">Circulars</a></li>
+          </ul>
+        </li>
+        <li style="background:url(images/school-setting-2.png);"><a href="#">School Settings</a></li>
+        <li style="background:url(images/profile-setting-2.png);"><a href="#">My Profile Setting</a></li>
+        <li style="background:url(images/branches-2.png);"><a href="#">Branches</a></li>
+      </ul>
+    </div>
+    <!--  Dashboard Menu Ends -->
+    
+    <div class="col-lg-9 col-md-9 col-sm-9 bl"> 
+      <!--  Dashboard Info Starts -->
+      <div class="row dashboard-info">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/dashboard.png" alt="Dashboard Icon" /> </div>
+            <p>Dashboard</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/school-profiling.png" alt="School Icon" /> </div>
+            <p>School Profiling</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/students.png" alt="Student Icon" /> </div>
+            <p>Students</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/Principal.png" alt="Principal Icon" /> </div>
+            <p>Principal</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/teacher.png" alt="Teacher Icon" /> </div>
+            <p>Teacher</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/parents.png" alt="Parent Icon" /> </div>
+            <p>Parent</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/accounts.png" alt="Accountant Icon" /> </div>
+            <p>Accountant</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/subject.png" alt="Subject Icon" /> </div>
+            <p>Subject</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/time-table.png" alt="Time Table Icon" /> </div>
+            <p>Time Table</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/academic-planner.png" alt="Academic Planner Icon" /> </div>
+            <p>Academic Planner</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/planner-view-2.png" alt="Planner View Icon" /> </div>
+            <p>Planner View</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/attendance.png" alt="Attendance Icon" /> </div>
+            <p>Attendance</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/leave-2.png" alt="Leave Icon" /> </div>
+            <p>Manage Leaves</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/exam.png" alt="Exam Icon" /> </div>
+            <p>Exam</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/notice-icon.png" alt="Notice Board Icon" /> </div>
+            <p>Notices</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/school-setting-2.png" alt="Setting Icon" /> </div>
+            <p>School Setting</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/profile-setting-2.png" alt="Profile Setting Icon" /> </div>
+            <p>My Profile Setting</p>
+          </div>
+          </a> </div>
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xx-12"> <span class="fa fa-check mycheck"></span> <a href="#">
+          <div class="detail-wrap">
+            <div class="image-wrap"> <img src="images/branches-2.png" alt="Branches Icon" /> </div>
+            <p>Branches</p>
+          </div>
+          </a> </div>
+      </div>
+      <!--  Dashboard Info Ends --> 
+    </div>
+  </div>
+</div>
+<footer> 
+  <!--  footer Starts -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="first-logo"> <img src="images/gminns_logo.png" class="img-responsive  glogo" alt="Logo"/> </div>
+        <div class="fsize" > <a href="www.gminns.com" class="myanchor web"  target="_blank">www.gminns.com</a> <span class="fa fa-envelope-o"></span> <a href="mailto:info@gminns.com"  class="myanchor2 " >info@gminns.com</a> </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <p>Powered by<a href="http://www.gminns.com" class="anchor"> <span class="gmn"> GMINNS </span></a> IT BUSINESS SOLUTIONS (PVT) LTD</p>
+        <div class="contact"> <a href="callto:+92-51-8430813">+92-51-8430813</a> <a href="callto:+92-51-8430814">+92-51-8430814</a> <a href="callto:+92-300-4446694">+92-300-4446694</a>
+          <p>Plot # 60-D, St # 17 Pak PWD Society Islamabad - Pakistan</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="second-logo"> <img src="images/gsims_logo.png"  class="img-responsive glogo"  alt="Logo"/> </div>
+        <div class="fsize" > <a href="www.gsims.com.pk" class="myanchor web"  target="_blank">www.gsims.com.pk</a> <span class="fa fa-envelope-o"></span> <a href="mailto:info@gsims.com" class="myanchor2">info@gsims.com.pk</a> </div>
+      </div>
+    </div>
+  </div>
+  <p class="footer_bottom">Copyright &#169; 2016 <strong>GMINNS</strong> All rights reserved.</p>
+  <!--  footer Ends --> 
+</footer>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="https://use.fontawesome.com/06111aeca4.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</html>
